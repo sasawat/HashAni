@@ -57,11 +57,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HashAni.cs" />
+    <Compile Include="HashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HashForm.Designer.cs">
+      <DependentUpon>HashForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="HashAni.snk" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HashForm.resx">
+      <DependentUpon>HashForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
